@@ -42,14 +42,14 @@ public class Producto {
 		this.descuento = descuento;
 	}
 	
-	public float calcularDescuento(Producto producto) {
-		float precio = producto.precio-producto.descuento;
+	public float calcularDescuento() {
+		float precio = this.precio-this.descuento;
 		return precio;
 	}
-	public void mostrarDatos(Producto producto) {
-		System.out.println("Producto: "+producto.nombre);
-		System.out.println("Codigo del producto: "+producto.codigo);
-		System.out.println("Precio: $"+producto.precio);
-		System.out.println("Descuento: $"+ producto.descuento);
+	public void mostrarDatos() {
+		System.out.println("Producto: "+this.nombre);
+		System.out.println("Codigo del producto: "+this.codigo);
+		System.out.println("Precio: $"+this.precio);
+		System.out.println("Descuento: $"+ this.descuento);
 	}
 }

@@ -12,8 +12,8 @@ public class Main {
 		System.out.println("Ingrese un numero entero: ");
 		int n = sc.nextInt();
 		calculadora.setN(n);
-		long sumatoria= calculadora.calcularSumatoria(n);
-		long productoria=calculadora.calcularProductoria(n);
+		long sumatoria= calculadora.calcularSumatoria();
+		long productoria=calculadora.calcularProductoria();
 		System.out.println("Sumatoria especial: "+sumatoria);
 		System.out.println("Productoria especial: "+productoria);
 		sc.close();

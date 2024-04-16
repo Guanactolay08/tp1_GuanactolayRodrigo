@@ -18,9 +18,9 @@ public class Main {
 		double salario = Double.parseDouble(salarioString);
 		
 		Empleado empleado = new Empleado(nombre, legajo, salario);
-		empleado.mostrarDatos(empleado);
-		empleado.darAumento(empleado);
-		empleado.mostrarDatos(empleado);
+		empleado.mostrarDatos();
+		empleado.darAumento();
+		empleado.mostrarDatos();
 		sc.close();
 	}
 

@@ -25,10 +25,10 @@ public class Main {
 			
 			pizza.setDiametro(diametro);
 			pizza.setIngredientesEspeciales(ingredientesEspeciales);
-			pizza.calcularPrecio(pizza);
-			pizza.calcularArea(pizza);
+			pizza.calcularPrecio();
+			pizza.calcularArea();
 			System.out.println("*** PIZZA "+cantidadPizza+" ***");
-			pizza.mostrarDatos(pizza);
+			pizza.mostrarDatos();
 			cantidadPizza++;
 		}
 		sc.close();

@@ -15,18 +15,18 @@ public class CalculadoraEspecial {
 		
 	}
 	
-	public long calcularSumatoria (int n) {
+	public long calcularSumatoria () {
 		double sumatoria=0;
-		for(int k=1;k<=n;k++) {
+		for(int k=1;k<=this.n;k++) {
 			sumatoria = sumatoria + Math.pow((k*(k+1)/2), 2);
 		}
 		long sumatorialong = (long)sumatoria;
 		return sumatorialong;
 	}
 	
-	public long calcularProductoria(int n) {
+	public long calcularProductoria() {
 		long productoria=1;
-		for(int k=1; k<=n; k++) {
+		for(int k=1; k<=this.n; k++) {
 			productoria = productoria * (k*(k+4));
 		}
 		return productoria;

@@ -46,25 +46,25 @@ public class Pizza {
 	}
 
 
-	public void calcularPrecio(Pizza pizza) {
+	public void calcularPrecio() {
 		
-		if (pizza.diametro == 20 && !pizza.ingredientesEspeciales) {
-			pizza.precio = 4500;
+		if (this.diametro == 20 && !this.ingredientesEspeciales) {
+			this.precio = 4500;
 		}else
-		{	if(pizza.diametro == 20 && pizza.ingredientesEspeciales) {
-				pizza.precio= 4500+pizza.ingredientesEspeciales2;
+		{	if(this.diametro == 20 && this.ingredientesEspeciales) {
+				this.precio= 4500+this.ingredientesEspeciales2;
 			}else
-			{	if(pizza.diametro == 30 && !pizza.ingredientesEspeciales) {
-					pizza.precio = 4800;
+			{	if(this.diametro == 30 && !this.ingredientesEspeciales) {
+					this.precio = 4800;
 				}else
-				{	if(pizza.diametro == 30 && pizza.ingredientesEspeciales) {
-						pizza.precio = 4800+pizza.ingredientesEspeciales3;	
+				{	if(this.diametro == 30 && this.ingredientesEspeciales) {
+						this.precio = 4800+this.ingredientesEspeciales3;	
 					}else
-					{	if(pizza.diametro == 40 && !pizza.ingredientesEspeciales) {
-							pizza.precio = 5500;
+					{	if(this.diametro == 40 && !this.ingredientesEspeciales) {
+							this.precio = 5500;
 						}else
-						{	if(pizza.diametro == 40 && pizza.ingredientesEspeciales) {
-								pizza.precio = 5500+pizza.ingredientesEspeciales4;
+						{	if(this.diametro == 40 && this.ingredientesEspeciales) {
+								this.precio = 5500+this.ingredientesEspeciales4;
 							}
 						}
 					}
@@ -74,15 +74,15 @@ public class Pizza {
 		 
 	}
 	
-	public void calcularArea(Pizza pizza) {
-		pizza.area= Math.PI * (Math.pow((pizza.diametro/2),2));
+	public void calcularArea() {
+		this.area= Math.PI * (Math.pow((this.diametro/2),2));
 	}
 	
-	public void mostrarDatos(Pizza pizza) {
-		System.out.println("Diametro: "+pizza.diametro);
-		System.out.println("Ingredientes especiales: "+pizza.ingredientesEspeciales);
-		System.out.println("Precio pizza: $"+pizza.precio);
-		System.out.println("Area de la pizza: "+pizza.area);
+	public void mostrarDatos() {
+		System.out.println("Diametro: "+this.diametro);
+		System.out.println("Ingredientes especiales: "+this.ingredientesEspeciales);
+		System.out.println("Precio pizza: $"+this.precio);
+		System.out.println("Area de la pizza: "+this.area);
 		System.out.println("");
 	}
 }

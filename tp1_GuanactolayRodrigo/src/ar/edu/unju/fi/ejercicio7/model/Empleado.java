@@ -23,13 +23,13 @@ public class Empleado {
 			this.salario = salarioMinimo;	
 	}
 	
-	public void mostrarDatos(Empleado empleado) {
-		System.out.println("Nombre del empleado: "+empleado.nombre);
-		System.out.println("Legajo: "+empleado.legajo);
-		System.out.println("Salario $: "+empleado.salario);
+	public void mostrarDatos() {
+		System.out.println("Nombre del empleado: "+this.nombre);
+		System.out.println("Legajo: "+this.legajo);
+		System.out.println("Salario $: "+this.salario);
 	}
 	
-	public void darAumento(Empleado empleado) {
+	public void darAumento() {
 		Scanner sc = new Scanner(System.in);
 		String opcion ="";
 		boolean opcionInvalida;
@@ -42,7 +42,7 @@ public class Empleado {
 				opcionInvalida=true;
 			}else
 			{ if(opcion.equals("S") || opcion.equals("s") ) {
-				empleado.salario = empleado.salario + aumentoMerito;
+				this.salario = this.salario + aumentoMerito;
 			}	
 			}
 		}while(opcionInvalida==true);

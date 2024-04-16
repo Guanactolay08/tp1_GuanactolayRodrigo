@@ -26,8 +26,8 @@ public class Main {
 			producto.setCodigo(codigo);
 			producto.setPrecio(precio);
 			producto.setDescuento(descuento);
-			float precioFinal = producto.calcularDescuento(producto);
-			producto.mostrarDatos(producto);
+			float precioFinal = producto.calcularDescuento();
+			producto.mostrarDatos();
 			System.out.println("Precio con descuento: "+precioFinal);
 			System.out.println("");
 			cantidadProductos++;
