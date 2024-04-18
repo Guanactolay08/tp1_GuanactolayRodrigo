@@ -24,6 +24,7 @@ public class Main {
 			suma=suma+enteros[i];
 		}
 		System.out.println("La suma de sus elementos es: "+suma);
+		sc.close();
 	}
 
 }
