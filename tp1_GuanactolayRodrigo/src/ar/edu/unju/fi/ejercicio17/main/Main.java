@@ -25,7 +25,7 @@ public class Main {
 				case 3: mostrarJugadores();break;
 				case 4: modificarJugador();break;
 				case 5: eliminarJugador();break;
-				case 6: int cantidad= calcularCantidad();
+				case 6: int cantidad= jugadores.size();
 						System.out.println("=========================");
 						System.out.println("CANTIDAD DE JUGADORES: "+cantidad);
 						System.out.println("=========================");
@@ -255,20 +255,7 @@ public class Main {
 			}
 		}
 	}
-	/*
-	 * calcular la cantidad de jugadores que hay en la arraylist
-	 */
-	public static int calcularCantidad()	{
-		int cantidad=0;
-		if(jugadores == null) {
-			System.out.println("LISTA DE JUGADORES VACIA.");
-		}else {
-			for(Jugador jugador : jugadores ) {
-				cantidad++;
-			}
-		}
-		return cantidad;	
-	}
+	
 	/*
 	 * calcular la cantidad de jugadores de una
 	 * determinada nacionalidad solicitada por le usuario
